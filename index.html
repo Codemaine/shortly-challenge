@@ -1,85 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
-
-  Features
-  Pricing
-  Resources
-
-  Login
-  Sign Up
-
-  More than just shorter links
-
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
-
-  Get Started
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <nav class="lg:px-10 lg:py-5">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex-shrink-0 flex items-center">
+            <img class="block h-8 w-auto" src="images/logo.svg" alt="Workflow">
+          </div>
+          <div class="absolute right-0 flex items-center md:hidden">
+            <!-- Mobile menu button-->
+            <button type="button"
+              class="inline-flex mobile-menu-button items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!--
+              Icon when menu is closed.
   
-  Shorten a link here...
-
-  Shorten It!
-
-  Advanced Statistics
-
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
-
-  Features
-
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
+              Heroicon name: outline/menu
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+              Menu open: "hidden", Menu closed: "block"
+            -->
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:block md:ml-6">
+            <div class="flex space-x-4">
+              <!-- Links -->
+              <a href="#" class="text-gray-400 px-3 py-2 rounded-md text-sm font-medium"
+                aria-current="page">Dashboard</a>
+
+              <a href="#"
+                class="text-gray-400 hover:text-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+
+              <a href="#"
+                class="text-gray-400 hover:text-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+
+              <a href="#"
+                class="text-gray-400 hover:text-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:block hidden ml-6 pt-2">
+          <a href="#" class="text-gray-400 px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Login</a>
+          <button style="background-color: hsl(180, 66%, 49%);"
+            class="p-3 rounded-full text-sm font-bold text-white">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hidden" id="mobile-menu">
+      <div style="background-color: hsl(257, 27%, 26%);" class="px-2 pt-2 pb-3 rounded-lg mx-10">
+        <div class="py-5">
+
+          <a href="#" class="text-white block px-3 py-2 mb-2 text-center text-base font-medium font-bold">Features</a>
+
+          <a href="#" class="text-white block px-3 py-2 mb-2 text-center text-base font-medium font-bold">Team</a>
+
+          <a href="#" class="text-white block px-3 py-2 mb-2 text-center text-base font-medium font-bold">Resources</a>
+
+          <div style="height: 2px; background-color: #4F4469;" class="my-5 mx-3 w-auto"></div>
+
+          <a href="#" class="text-white block px-3 py-2 mb-2 text-center text-base font-medium font-bold">Login</a>
+
+          <button style="background-color: hsl(180, 66%, 49%);"
+            class="p-3 rounded-full text-base font-medium font-bold text-white w-full">Sign Up</button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
 </body>
+<script>
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector("#mobile-menu")
+  let isMenuOpen = false;
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    isMenuOpen = !isMenuOpen
+    console.log(isMenuOpen);
+  })
+</script>
+
 </html>
