@@ -6,13 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-
+<style>
+  *{
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
 <body>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <nav class="lg:px-10 lg:py-5">
@@ -43,17 +50,14 @@
           <div class="hidden md:block md:ml-6">
             <div class="flex space-x-4">
               <!-- Links -->
-              <a href="#" class="text-gray-400 px-3 py-2 rounded-md text-sm font-medium"
-                aria-current="page">Dashboard</a>
+              <a href="#"
+                class="text-gray-400 hover:text-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
 
               <a href="#"
-                class="text-gray-400 hover:text-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+                class="text-gray-400 hover:text-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
 
               <a href="#"
-                class="text-gray-400 hover:text-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-
-              <a href="#"
-                class="text-gray-400 hover:text-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+                class="text-gray-400 hover:text-gray-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Resources</a>
             </div>
           </div>
         </div>
@@ -91,10 +95,10 @@
   <div class="flex lg:flex-row flex-col-reverse">
     <main class="mt-10 mx-2 ml-20 max-w-7xl px-4 bg-transparent sm:mt-12 sm:pl-6 md:mt-16 lg:mt-20 lg:pl-8 xl:mt-28">
       <div class="sm:text-center lg:text-left">
-        <h1 class="text-9xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+        <h1 class="md:text-7xl text-5xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           More than just shorter links
         </h1>
-        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+        <p class="mt-3 text-sm text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
           Build your brand's recognition and get detailed insights on how your links are performing
         </p>
         <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -106,6 +110,14 @@
       <img class="h-56 w-full object-scale-down overflow-hidden sm:h-72 md:h-96 lg:w-full lg:h-full" src="images/illustration-working.svg"
         alt="">
     </div>
+    </div>
+    <!-- Form -->
+    <div style="background-color: hsl(257, 27%, 26%); background-image: url('/images/bg-shorten-desktop.svg'); background-repeat: no-repeat; background-size: cover;" class="flex items-center h-28 rounded-lg mx-11 px-10">
+      <div class="align-center w-full grid grid-rows-2 gap-1 lg:flex lg:row lg:gap-4">
+        <input class="bg-white h-12 lg:w-10/12 w-full rounded-md px-7" placeholder="Shorten a link here..." />
+        <button style="background-color: hsl(180, 66%, 49%);"
+            class="p-3 rounded-lg text-base lg:w-2/12 w-full font-medium font-bold text-white">Shorten It!</button>
+      </div>
     </div>
 </body>
 <script>
