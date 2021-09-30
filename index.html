@@ -141,7 +141,7 @@
         dashboard.</p>
     </div>
 
-    <div class="flex gap-10 h-62 pt-20">
+    <div class="flex lg:flex-row flex-col w-full items-center gap-10 h-62 pt-16 pb-20">
       <div class="relative ml-12 z-10">
         <div class="w-20 h-20 absolute bottom-auto -top-10 left-10 flex items-center justify-center rounded-full"
           style="background-color: hsl(257, 27%, 26%);">
@@ -156,7 +156,7 @@
             Branded links help instil confidence in your content</p>
         </div>
       </div>
-      <div class="relative mt-16 z-10">
+      <div class="relative lg:ml-0 ml-12 mt-10 lg:mt-16 z-10">
         <div class="w-20 h-20 absolute bottom-auto -top-10 left-10 flex items-center justify-center rounded-full"
           style="background-color: hsl(257, 27%, 26%);">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
@@ -169,7 +169,7 @@
           <p class="text-gray-500">Gain insights on who is clicking your links. Knowning when and where people engage with your content helps inform better decisions.</p>
         </div>
       </div>
-      <div class="relative mt-32 mr-20 z-10">
+      <div class="relative lg:mt-32 lg:ml-0 mt-10 ml-12 mr-20 z-10">
         <div class="w-20 h-20 absolute bottom-auto -top-10 left-10 flex items-center justify-center rounded-full"
           style="background-color: hsl(257, 27%, 26%);">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
@@ -182,11 +182,14 @@
           <p class="text-gray-500">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
         </div>
       </div>
-      <div class="h-2 bg-black absolute mt-44 ml-48" style="width: 50rem; background: hsl(180, 66%, 49%);"></div>
-    
+      <div class="h-2 bg-black hidden lg:block absolute mt-44 ml-48" style="width: 50rem; background: hsl(180, 66%, 49%);"></div>
+      <div class="w-2 block lg:hidden ml-10 bg-black block absolute" style="height: 50rem; background: hsl(180, 66%, 49%);"></div>
     </div>
-      
-      
+    <div class="h-48 flex items-center justify-center flex-col" style="background-color: hsl(257, 27%, 26%); background-image: url('/images/bg-boost-desktop.svg'); background-repeat: no-repeat; background-size: cover;">
+      <p class="md:text-4xl text-3xl text-white font-bold mb-5">Boost your links today</p>
+      <button style="background-color: hsl(180, 66%, 49%);"
+            class="p-3 rounded-full px-7 text-sm font-bold text-white">Get Started</button>
+    </div>
 </body>
 <script>
   // Get DOM elements
