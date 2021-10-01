@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - CSS Framework: [https://taillwindcss.com](https://tailwindcss.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://codetrain-shortly-challenge.vercel.app](https://codetrain-shortly-challenge.vercel.app)
 
 ## My process
 
