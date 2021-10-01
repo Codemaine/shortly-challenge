@@ -142,7 +142,7 @@
     </div>
 
     <div class="flex lg:flex-row flex-col w-full items-center gap-10 h-62 pt-16 pb-20">
-      <div class="relative ml-12 z-10">
+      <div class="relative ml-4 z-10">
         <div class="w-20 h-20 absolute bottom-auto -top-10 left-10 flex items-center justify-center rounded-full"
           style="background-color: hsl(257, 27%, 26%);">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
@@ -156,7 +156,7 @@
             Branded links help instil confidence in your content</p>
         </div>
       </div>
-      <div class="relative lg:ml-0 ml-12 mt-10 lg:mt-16 z-10">
+      <div class="relative ml-4 mt-10 z-10">
         <div class="w-20 h-20 absolute bottom-auto -top-10 left-10 flex items-center justify-center rounded-full"
           style="background-color: hsl(257, 27%, 26%);">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
@@ -170,7 +170,7 @@
             with your content helps inform better decisions.</p>
         </div>
       </div>
-      <div class="relative lg:mt-32 lg:ml-0 mt-10 ml-12 mr-20 z-10">
+      <div class="relative ml-4 mt-24 z-10">
         <div class="w-20 h-20 absolute bottom-auto -top-10 left-10 flex items-center justify-center rounded-full"
           style="background-color: hsl(257, 27%, 26%);">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
@@ -420,6 +420,7 @@
     //Check if form is empty
     if (input.value) {
       shortenUrl({ longUrl: input.value })
+      input.value === ""
     } else {
       input.classList.toggle("border-2")
       input.classList.toggle("border-red-500")
